@@ -94,6 +94,7 @@
 
 <script>
 Q3D.Config.orthoCamera = true;
+Q3D.Config.localMode = true;
 Q3D.Config.northArrow.visible = true;
 Q3D.Config.northArrow.color = 0xef5356;
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
@@ -113,7 +114,7 @@ app.addEventListener("sceneLoaded", function () {
 });
 
 // load the scene
-app.loadSceneFile("./data/Coromandel_3D_Doc/scene.json", function () {
+app.loadSceneFile("./data/Coromandel_3D_Doc/scene.js", function () {
   app.start();
 
   Q3D.gui.init();   // initialize dat-gui panel
